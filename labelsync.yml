@@ -61,6 +61,21 @@ labels: &common
 
 # Repositories
 repos:
+  huge-backend:
+    config:
+      removeUnconfiguredLabels: true  
+    labels:
+      <<: *common
+  huge-ios:
+    config:
+      removeUnconfiguredLabels: true  
+    labels:
+      <<: *common
+  huge-docs:
+    config:
+      removeUnconfiguredLabels: true  
+    labels:
+      <<: *common
   MRKT-docs:
     config:
       removeUnconfiguredLabels: true  
