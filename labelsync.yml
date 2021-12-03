@@ -81,3 +81,8 @@ repos:
       removeUnconfiguredLabels: true  
     labels:
       <<: *common
+  MRKT-backend:
+    config:
+      removeUnconfiguredLabels: true  
+    labels:
+      <<: *common
