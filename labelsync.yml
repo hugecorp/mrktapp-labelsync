@@ -71,16 +71,6 @@ repos:
       removeUnconfiguredLabels: true  
     labels:
       <<: *common
-  huge-docs:
-    config:
-      removeUnconfiguredLabels: true  
-    labels:
-      <<: *common
-  MRKT-docs:
-    config:
-      removeUnconfiguredLabels: true  
-    labels:
-      <<: *common
   MRKT-backend:
     config:
       removeUnconfiguredLabels: true  
