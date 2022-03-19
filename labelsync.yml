@@ -21,25 +21,17 @@ colors:
 
 # Labels
 labels: &common
+  "roadmap":
+    color: *release
+    description: Defined in the roadmap
   "bug/0-needs-info":
     color: *bug
     description: More information is needed for reproduction.
-    siblings: ["kind/bug"]
-  "bug/1-repro-available":
-    color: *bug
-    description: A reproduction exists and needs to be confirmed.
-    siblings: ["kind/bug"]
-  "bug/2-confirmed":
-    color: *bug
-    description: We have confirmed that this is a bug.
     siblings: ["kind/bug"]
   "kind/bug":
     color: *bug
     description: A reported bug.
     alias: ["bug"]
-  "kind/regression":
-    color: *kind
-    description: A reported bug in functionality that used to work before.
   "kind/feature":
     color: *kind
     description: A request for a new feature.
@@ -67,11 +59,6 @@ repos:
     labels:
       <<: *common
   huge-ios:
-    config:
-      removeUnconfiguredLabels: true  
-    labels:
-      <<: *common
-  MRKT-backend:
     config:
       removeUnconfiguredLabels: true  
     labels:
